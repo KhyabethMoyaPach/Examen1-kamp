@@ -13,7 +13,11 @@ return new class extends Migration
     {
         Schema::create('productos', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre',50);
+            $table->decimal('precio', 8, 2);
+            $table->unsignedBigInteger('id_marca');
             $table->timestamps();
+            $table->foreign('id_marca')->references('id')->on('marcas')->onUpdate('cascade')->onDelete('cascade');
         });
     }
 
