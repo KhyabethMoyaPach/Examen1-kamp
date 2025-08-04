@@ -13,17 +13,17 @@ class MarcaSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('marca')->insert([
+        DB::table('marcas')->insert([
             'nombre' => 'Zara',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
-        DB::table('marca')->insert([
+        DB::table('marcas')->insert([
             'nombre' => 'Supreme',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
-        DB::table('marca')->insert([
+        DB::table('marcas')->insert([
             'nombre' => 'Nike',
             'created_at' => now(),
             'updated_at' => now(),

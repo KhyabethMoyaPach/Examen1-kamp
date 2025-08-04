@@ -9,5 +9,5 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
-Route::apiResource('marca',MarcaController::class);
-Route::apiResource('producto',ProductoController::class);
+Route::apiResource('marcas',MarcaController::class);
+Route::apiResource('productos',ProductoController::class);
